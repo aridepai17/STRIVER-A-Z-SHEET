@@ -8,17 +8,13 @@ A prime number is a number which has no divisors except 1 and itself.
 import math 
 
 def isPrime(n):
-  count = 0
-  for i in range(1, int(math.sqrt(n)) + 1):
-    if n % i == 0:
-      count += 1
-      if n // i != i:
-        count += 1
-  
-  if count == 2:
+    if n <= 1:
+        return False
+    
+    for i in range(2, int(math.sqrt(n) + 1)):
+        if n % i == 0:
+            return False
     return True
-  else:
-    return False
 
 # Examples 
 print(isPrime(1))   # False, 1 is not a prime number
