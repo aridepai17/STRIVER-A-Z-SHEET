@@ -18,6 +18,14 @@ def missingNumber(nums):
         
     return xor1 ^ xor2
 
+# Alternate approach using n*(n+1)//2
+
+def missingNumber(nums):
+    n = len(nums)
+    expectedSum  = n * (n + 1) // 2
+    actualSum = sum(nums) 
+    return expectedSum - actualSum
+
 # Examples 
 nums1 = [0, 2, 3, 1, 4]
 print(missingNumber(nums1)) # Output: 5
