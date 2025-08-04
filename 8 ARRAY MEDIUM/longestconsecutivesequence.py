@@ -6,6 +6,9 @@ You must write an algorithm that runs in O(n) time.
 '''
 
 def longestConsecutive(nums):
+    if not nums:
+        return 0
+    
     numSet = set(nums)
     currentStreak = 0
     longestStreak = 0
