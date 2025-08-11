@@ -9,6 +9,7 @@ If no such index is found, return the size of the array.
 def upperBound(nums, x):
     left = 0
     right = len(nums) - 1
+    ans = len(nums)
     
     while left <= right:
         mid = (left + right) // 2
