@@ -19,7 +19,7 @@ def searchInsertPosition(nums, target):
         else:
             left = mid + 1
             
-    return mid + 1
+    return left
 
 # Examples
 nums1 = [1, 3, 5, 6]
