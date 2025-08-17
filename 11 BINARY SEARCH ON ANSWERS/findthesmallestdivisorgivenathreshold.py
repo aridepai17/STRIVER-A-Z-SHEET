@@ -63,3 +63,15 @@ print(smallestDivisort(nums10, threshold10)) # Output: 75
 
 nums11, threshold11 = [2,3,5,7,11], 11
 print(smallestDivisort(nums11, threshold11)) # Output: 3
+
+nums12, threshold12 = [8,4,2,1], 8
+print(smallestDivisort(nums12, threshold12)) # Output: 2
+
+nums13, threshold13 = [15,10,5,3], 6
+print(smallestDivisort(nums13, threshold13)) # Output: 8
+
+nums14, threshold14 = [20,15,10,5], 12
+print(smallestDivisort(nums14, threshold14)) # Output: 6
+
+nums15, threshold15 = [1,2,3,4,5,6,7,8,9,10], 15
+print(smallestDivisort(nums15, threshold15)) # Output: 3
