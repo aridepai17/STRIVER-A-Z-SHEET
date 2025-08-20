@@ -35,7 +35,6 @@ def aggressiveCows(stalls, k):
         else:
             right = mid - 1
             
-    
     return right
 
 # Examples
