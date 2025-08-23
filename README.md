@@ -19,7 +19,6 @@ Learn Data Structures and Algorithms (DSA) from A to Z for free in a well-organi
 1. [Getting Started](#getting-started)
 2. [Topics Covered](#topics-covered)
 3. [How to Use](#how-to-use)
-4. [License](#license)
 
 ## Getting Started
 
