@@ -38,13 +38,13 @@ def findPages(arr, k):
     
     while left <= right:
         mid = (left + right) // 2
-    
-    noOfStudents = findStudents(mid, arr)
-    
-    if noOfStudents > k:
-        left = mid + 1
-    else:
-        right = mid - 1
+        
+        noOfStudents = findStudents(mid, arr)
+        
+        if noOfStudents > k:
+            left = mid + 1
+        else:
+            right = mid - 1
         
     return left
 
