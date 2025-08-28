@@ -13,7 +13,7 @@ class ListNode:
         self.next = next
 
 def deleteHead(head):
-    if head is None and head.next is None:
+    if head is None or head.next is None:
         return None
     
     current = head
