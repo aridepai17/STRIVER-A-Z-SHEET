@@ -54,7 +54,7 @@ def findLength(slow, fast):
         count += 1
         fast = fast.next
         
-        return count
+    return count
 
 # Time Complexity: O(n) - traverse until pointers meet (<= n steps) + count cycle length (<= n)
 # Space Complexity: O(1) - uses a constant number of pointers
