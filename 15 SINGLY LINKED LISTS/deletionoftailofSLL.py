@@ -16,8 +16,8 @@ def deleteTail(head):
     if head is None or head.next is None:
         return None
     
-    current = head.next
-    prev = current
+    current = head
+    prev = None
     
     while current.next is not None:
         prev = current
