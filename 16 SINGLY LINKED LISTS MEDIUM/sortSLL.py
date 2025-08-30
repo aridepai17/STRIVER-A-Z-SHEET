@@ -11,7 +11,7 @@ class ListNode:
 # Solution 1: Using extra array
 def sortList1(head):
     if head is None or head.next is None:
-        return None
+        return head
     
     current = head
     arr = []
