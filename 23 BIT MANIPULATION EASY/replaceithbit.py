@@ -8,7 +8,7 @@ of the number n to '0' if it is  '1', else return the number N itself.
 def replaceIthBit(n, i):
     length = n.bit_length()
     
-    if i <= 0 and i > length:
+    if i <= 0 or i > length:
         return n
     
     position = length - i
