@@ -5,6 +5,7 @@ Given a non-negative integer `n`, write a function to return its binary represen
 The returned string should not have leading zeros, except for the number 0 itself.
 '''
 
+# Solution 1: Using Iterative Method
 def tobinaryString(n):
     binaryArray = []
     
@@ -28,6 +29,31 @@ Space Complexity: O(log n)
 We use an array, `binaryArray`, to store the bits of the number.
 The number of bits in the binary representation of n is proportional to log₂(n).
 Therefore, the space required to store these bits in the array is O(log n).
+'''
+
+# Solution 2: Using BitWise Operators
+def toBinaryString2(n):
+    binaryString = ""
+    
+    while n > 0:
+        bit = n & 1
+        binaryString += str(bit)
+        n = n >> 1
+        
+    return binaryString[::-1]
+
+'''
+Time Complexity: O(log n)
+The `while` loop iterates as long as `n > 0`. In each step, `n` is right-shifted by 1 (`n = n >> 1`), which is equivalent to integer division by 2.
+Therefore, the number of iterations is proportional to `log₂(n)`.
+The operations inside the loop are executed `log n` times.
+The final string reversal operation `[::-1]` also takes `O(log n)` time.
+The overall time complexity is therefore O(log n).
+
+Space Complexity: O(log n)
+The `binaryString` is used to store the binary representation.
+The length of the final string will be proportional to the number of bits in `n`, which is `log₂(n)`.
+Hence, the space complexity is O(log n).
 '''
 
 # Test Cases
